@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: "mongodb+srv://madan:Xscience08@cluster0.w1nis.mongodb.net/journal_db?retryWrites=true&w=majority&appName=Cluster0"
+
+server:
+  port: 8081

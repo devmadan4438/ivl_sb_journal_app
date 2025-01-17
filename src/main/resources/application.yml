@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+
+#Logging by packages
+#logging:
+#  level:
+#    net:
+#      learning:
+#        journal: ERROR
+
+#logging:
+#  level:
+#    root : OFF

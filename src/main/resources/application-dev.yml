@@ -1,0 +1,20 @@
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: "mongodb+srv://madan:Xscience08@cluster0.w1nis.mongodb.net/journal_db?retryWrites=true&w=majority&appName=Cluster0"
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: "twiker.dev@gmail.com"
+    password: "gjgkfgttburgktvw" # Use environment variables for better security
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+server:
+  port: 8080
