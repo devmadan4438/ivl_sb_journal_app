@@ -5,12 +5,12 @@ spring:
   data:
     mongodb:
       auto-index-creation: true
-      uri: "mongodb+srv://madan:Xscience08@cluster0.w1nis.mongodb.net/journal_db?retryWrites=true&w=majority&appName=Cluster0"
+      uri: ${DB_URL}
   mail:
     host: smtp.gmail.com
     port: 587
-    username: "twiker.dev@gmail.com"
-    password: "gjgkfgttburgktvw" # Use environment variables for better security
+    username: ${EMAIL_USERNAME}
+    password: ${EMAIL_PASSWORD}
     properties:
       mail:
         smtp:

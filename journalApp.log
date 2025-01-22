@@ -1,82 +1,686 @@
-25-01-22 16:16:23 [SpringApplicationShutdownHook] INFO   o.s.b.w.e.tomcat.GracefulShutdown --> Commencing graceful shutdown. Waiting for active requests to complete 
-25-01-22 16:16:23 [tomcat-shutdown] INFO   o.s.b.w.e.tomcat.GracefulShutdown --> Graceful shutdown complete 
-25-01-22 16:16:31 [main] INFO   c.l.journal.JournalApplication --> Starting JournalApplication using Java 17.0.12 with PID 17332 (C:\Workspace\code\learning\journal\target\classes started by MADAN MOHAN in C:\Workspace\code\learning\journal) 
-25-01-22 16:16:31 [main] INFO   c.l.journal.JournalApplication --> The following 1 profile is active: "dev" 
-25-01-22 16:16:33 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
-25-01-22 16:16:33 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
-25-01-22 16:16:33 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 278 ms. Found 2 MongoDB repository interfaces. 
-25-01-22 16:16:33 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
-25-01-22 16:16:33 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-25-01-22 16:16:33 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.JournalRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-25-01-22 16:16:33 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-25-01-22 16:16:33 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces. 
-25-01-22 16:16:34 [main] INFO   o.s.b.w.e.tomcat.TomcatWebServer --> Tomcat initialized with port 8080 (http) 
-25-01-22 16:16:34 [main] INFO   o.a.coyote.http11.Http11NioProtocol --> Initializing ProtocolHandler ["http-nio-8080"] 
-25-01-22 16:16:34 [main] INFO   o.a.catalina.core.StandardService --> Starting service [Tomcat] 
-25-01-22 16:16:34 [main] INFO   o.a.catalina.core.StandardEngine --> Starting Servlet engine: [Apache Tomcat/10.1.33] 
-25-01-22 16:16:34 [main] INFO   o.a.c.c.C.[Tomcat].[localhost].[/] --> Initializing Spring embedded WebApplicationContext 
-25-01-22 16:16:34 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext --> Root WebApplicationContext: initialization completed in 2983 ms 
-25-01-22 16:16:36 [main] INFO   org.mongodb.driver.client --> MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.12+8-LTS-286"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='madan', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@32ae8f27, com.mongodb.Jep395RecordCodecProvider@75e80a97, com.mongodb.KotlinCodecProvider@5b8853]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.w1nis.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-tp87g7-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null} 
-25-01-22 16:16:37 [main] INFO   org.mongodb.driver.cluster --> Waiting for server to become available for operation with ID 2. Remaining time: 29969 ms. Selector: WritableServerSelector, topology description: {type=UNKNOWN, servers=[]. 
-25-01-22 16:16:37 [cluster-ClusterId{value='6790cc8c65970b52da745a61', description='Cluster0'}-srv-cluster0.w1nis.mongodb.net] INFO   org.mongodb.driver.cluster --> Adding discovered server cluster0-shard-00-00.w1nis.mongodb.net:27017 to client view of cluster 
-25-01-22 16:16:37 [cluster-ClusterId{value='6790cc8c65970b52da745a61', description='Cluster0'}-srv-cluster0.w1nis.mongodb.net] INFO   org.mongodb.driver.cluster --> Adding discovered server cluster0-shard-00-01.w1nis.mongodb.net:27017 to client view of cluster 
-25-01-22 16:16:37 [cluster-ClusterId{value='6790cc8c65970b52da745a61', description='Cluster0'}-srv-cluster0.w1nis.mongodb.net] INFO   org.mongodb.driver.cluster --> Adding discovered server cluster0-shard-00-02.w1nis.mongodb.net:27017 to client view of cluster 
-25-01-22 16:16:38 [cluster-ClusterId{value='6790cc8c65970b52da745a61', description='Cluster0'}-cluster0-shard-00-02.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.w1nis.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=370689900, minRoundTripTimeNanos=0, setName='atlas-tp87g7-shard-0', canonicalAddress=cluster0-shard-00-02.w1nis.mongodb.net:27017, hosts=[cluster0-shard-00-00.w1nis.mongodb.net:27017, cluster0-shard-00-01.w1nis.mongodb.net:27017, cluster0-shard-00-02.w1nis.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.w1nis.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000d5, setVersion=245, topologyVersion=TopologyVersion{processId=6790a8b3e8a416ef5eadcea4, counter=6}, lastWriteDate=Wed Jan 22 16:16:37 IST 2025, lastUpdateTimeNanos=153850163611000} 
-25-01-22 16:16:38 [cluster-ClusterId{value='6790cc8c65970b52da745a61', description='Cluster0'}-cluster0-shard-00-02.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Discovered replica set primary cluster0-shard-00-02.w1nis.mongodb.net:27017 with max election id 7fffffff00000000000000d5 and max set version 245 
-25-01-22 16:16:38 [cluster-ClusterId{value='6790cc8c65970b52da745a61', description='Cluster0'}-cluster0-shard-00-00.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.w1nis.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=290726500, minRoundTripTimeNanos=0, setName='atlas-tp87g7-shard-0', canonicalAddress=cluster0-shard-00-00.w1nis.mongodb.net:27017, hosts=[cluster0-shard-00-00.w1nis.mongodb.net:27017, cluster0-shard-00-01.w1nis.mongodb.net:27017, cluster0-shard-00-02.w1nis.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.w1nis.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=245, topologyVersion=TopologyVersion{processId=6790a99431ba5e88c960e3e0, counter=4}, lastWriteDate=Wed Jan 22 16:16:37 IST 2025, lastUpdateTimeNanos=153850468737100} 
-25-01-22 16:16:39 [cluster-ClusterId{value='6790cc8c65970b52da745a61', description='Cluster0'}-cluster0-shard-00-01.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.w1nis.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=180486600, minRoundTripTimeNanos=0, setName='atlas-tp87g7-shard-0', canonicalAddress=cluster0-shard-00-01.w1nis.mongodb.net:27017, hosts=[cluster0-shard-00-00.w1nis.mongodb.net:27017, cluster0-shard-00-01.w1nis.mongodb.net:27017, cluster0-shard-00-02.w1nis.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.w1nis.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=245, topologyVersion=TopologyVersion{processId=6790aae75ae442b6979ff27b, counter=3}, lastWriteDate=Wed Jan 22 16:16:37 IST 2025, lastUpdateTimeNanos=153850768297400} 
-25-01-22 16:16:39 [main] WARN   o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springSecurity' defined in file [C:\Workspace\code\learning\journal\target\classes\com\learning\journal\config\SpringSecurity.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.learning.journal.filter.JwtFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {} 
-25-01-22 16:16:39 [main] INFO   o.a.catalina.core.StandardService --> Stopping service [Tomcat] 
-25-01-22 16:16:39 [main] INFO   o.s.b.a.l.ConditionEvaluationReportLogger --> 
+25-01-22 16:42:39 [main] INFO   c.l.journal.JournalApplication --> Starting JournalApplication using Java 17.0.12 with PID 10208 (C:\Workspace\code\learning\journal\target\classes started by MADAN MOHAN in C:\Workspace\code\learning\journal) 
+25-01-22 16:42:39 [main] INFO   c.l.journal.JournalApplication --> The following 1 profile is active: "dev" 
+25-01-22 16:42:41 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
+25-01-22 16:42:41 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
+25-01-22 16:42:41 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 290 ms. Found 2 MongoDB repository interfaces. 
+25-01-22 16:42:41 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
+25-01-22 16:42:41 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+25-01-22 16:42:41 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.JournalRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+25-01-22 16:42:41 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+25-01-22 16:42:41 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces. 
+25-01-22 16:42:42 [main] INFO   o.s.b.w.e.tomcat.TomcatWebServer --> Tomcat initialized with port 8080 (http) 
+25-01-22 16:42:42 [main] INFO   o.a.coyote.http11.Http11NioProtocol --> Initializing ProtocolHandler ["http-nio-8080"] 
+25-01-22 16:42:42 [main] INFO   o.a.catalina.core.StandardService --> Starting service [Tomcat] 
+25-01-22 16:42:42 [main] INFO   o.a.catalina.core.StandardEngine --> Starting Servlet engine: [Apache Tomcat/10.1.33] 
+25-01-22 16:42:42 [main] INFO   o.a.c.c.C.[Tomcat].[localhost].[/] --> Initializing Spring embedded WebApplicationContext 
+25-01-22 16:42:42 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext --> Root WebApplicationContext: initialization completed in 2925 ms 
+25-01-22 16:42:42 [main] ERROR  o.s.b.w.e.tomcat.TomcatStarter --> Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtFilter': Unsatisfied dependency expressed through field 'userDetailsServiceImp': Error creating bean with name 'userDetailsServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv:// 
+25-01-22 16:42:42 [main] INFO   o.a.catalina.core.StandardService --> Stopping service [Tomcat] 
+25-01-22 16:42:42 [main] WARN   o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server 
+25-01-22 16:42:42 [main] INFO   o.s.b.a.l.ConditionEvaluationReportLogger --> 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
-25-01-22 16:16:39 [main] ERROR  o.s.b.d.LoggingFailureAnalysisReporter --> 
+25-01-22 16:42:42 [main] ERROR  o.s.boot.SpringApplication --> Application run failed 
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.learning.journal.JournalApplication.main(JournalApplication.java:29)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtFilter': Unsatisfied dependency expressed through field 'userDetailsServiceImp': Error creating bean with name 'userDetailsServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4426)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 55 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 68 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 83 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 95 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 109 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 123 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1885)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1659)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1575)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2474)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2468)
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration.mongo(MongoAutoConfiguration.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 126 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 148 common frames omitted
+Caused by: java.lang.IllegalArgumentException: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at com.mongodb.ConnectionString.<init>(ConnectionString.java:362)
+	at com.mongodb.ConnectionString.<init>(ConnectionString.java:343)
+	at org.springframework.boot.autoconfigure.mongo.PropertiesMongoConnectionDetails.getConnectionString(PropertiesMongoConnectionDetails.java:49)
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration$MongoClientSettingsConfiguration.standardMongoSettingsCustomizer(MongoAutoConfiguration.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 151 common frames omitted
+25-01-22 16:43:45 [main] INFO   c.l.journal.JournalApplication --> Starting JournalApplication using Java 17.0.12 with PID 16776 (C:\Workspace\code\learning\journal\target\classes started by MADAN MOHAN in C:\Workspace\code\learning\journal) 
+25-01-22 16:43:45 [main] INFO   c.l.journal.JournalApplication --> The following 1 profile is active: "dev" 
+25-01-22 16:43:46 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
+25-01-22 16:43:46 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
+25-01-22 16:43:46 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 296 ms. Found 2 MongoDB repository interfaces. 
+25-01-22 16:43:47 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
+25-01-22 16:43:47 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+25-01-22 16:43:47 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.JournalRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+25-01-22 16:43:47 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+25-01-22 16:43:47 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces. 
+25-01-22 16:43:48 [main] INFO   o.s.b.w.e.tomcat.TomcatWebServer --> Tomcat initialized with port 8080 (http) 
+25-01-22 16:43:48 [main] INFO   o.a.coyote.http11.Http11NioProtocol --> Initializing ProtocolHandler ["http-nio-8080"] 
+25-01-22 16:43:48 [main] INFO   o.a.catalina.core.StandardService --> Starting service [Tomcat] 
+25-01-22 16:43:48 [main] INFO   o.a.catalina.core.StandardEngine --> Starting Servlet engine: [Apache Tomcat/10.1.33] 
+25-01-22 16:43:48 [main] INFO   o.a.c.c.C.[Tomcat].[localhost].[/] --> Initializing Spring embedded WebApplicationContext 
+25-01-22 16:43:48 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext --> Root WebApplicationContext: initialization completed in 3006 ms 
+25-01-22 16:43:48 [main] ERROR  o.s.b.w.e.tomcat.TomcatStarter --> Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtFilter': Unsatisfied dependency expressed through field 'userDetailsServiceImp': Error creating bean with name 'userDetailsServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv:// 
+25-01-22 16:43:48 [main] INFO   o.a.catalina.core.StandardService --> Stopping service [Tomcat] 
+25-01-22 16:43:48 [main] WARN   o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server 
+25-01-22 16:43:48 [main] INFO   o.s.b.a.l.ConditionEvaluationReportLogger --> 
 
-***************************
-APPLICATION FAILED TO START
-***************************
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+25-01-22 16:43:48 [main] ERROR  o.s.boot.SpringApplication --> Application run failed 
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.learning.journal.JournalApplication.main(JournalApplication.java:32)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtFilter': Unsatisfied dependency expressed through field 'userDetailsServiceImp': Error creating bean with name 'userDetailsServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4426)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 55 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 68 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 83 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 95 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 109 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 123 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1885)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1659)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1575)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2474)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2468)
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration.mongo(MongoAutoConfiguration.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 126 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 148 common frames omitted
+Caused by: java.lang.IllegalArgumentException: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at com.mongodb.ConnectionString.<init>(ConnectionString.java:362)
+	at com.mongodb.ConnectionString.<init>(ConnectionString.java:343)
+	at org.springframework.boot.autoconfigure.mongo.PropertiesMongoConnectionDetails.getConnectionString(PropertiesMongoConnectionDetails.java:49)
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration$MongoClientSettingsConfiguration.standardMongoSettingsCustomizer(MongoAutoConfiguration.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 151 common frames omitted
+25-01-22 16:46:53 [main] INFO   c.l.journal.JournalApplication --> Starting JournalApplication using Java 17.0.12 with PID 4888 (C:\Workspace\code\learning\journal\target\classes started by MADAN MOHAN in C:\Workspace\code\learning\journal) 
+25-01-22 16:46:53 [main] INFO   c.l.journal.JournalApplication --> The following 1 profile is active: "dev" 
+25-01-22 16:46:54 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
+25-01-22 16:46:54 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
+25-01-22 16:46:55 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 303 ms. Found 2 MongoDB repository interfaces. 
+25-01-22 16:46:55 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
+25-01-22 16:46:55 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+25-01-22 16:46:55 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.JournalRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+25-01-22 16:46:55 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+25-01-22 16:46:55 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces. 
+25-01-22 16:46:56 [main] INFO   o.s.b.w.e.tomcat.TomcatWebServer --> Tomcat initialized with port 8080 (http) 
+25-01-22 16:46:56 [main] INFO   o.a.coyote.http11.Http11NioProtocol --> Initializing ProtocolHandler ["http-nio-8080"] 
+25-01-22 16:46:56 [main] INFO   o.a.catalina.core.StandardService --> Starting service [Tomcat] 
+25-01-22 16:46:56 [main] INFO   o.a.catalina.core.StandardEngine --> Starting Servlet engine: [Apache Tomcat/10.1.33] 
+25-01-22 16:46:56 [main] INFO   o.a.c.c.C.[Tomcat].[localhost].[/] --> Initializing Spring embedded WebApplicationContext 
+25-01-22 16:46:56 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext --> Root WebApplicationContext: initialization completed in 2966 ms 
+25-01-22 16:46:56 [main] ERROR  o.s.b.w.e.tomcat.TomcatStarter --> Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtFilter': Unsatisfied dependency expressed through field 'userDetailsServiceImp': Error creating bean with name 'userDetailsServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv:// 
+25-01-22 16:46:56 [main] INFO   o.a.catalina.core.StandardService --> Stopping service [Tomcat] 
+25-01-22 16:46:56 [main] WARN   o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server 
+25-01-22 16:46:56 [main] INFO   o.s.b.a.l.ConditionEvaluationReportLogger --> 
 
-Description:
-
-Parameter 1 of constructor in com.learning.journal.config.SpringSecurity required a bean of type 'com.learning.journal.filter.JwtFilter' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.learning.journal.filter.JwtFilter' in your configuration.
- 
-25-01-22 16:17:17 [main] INFO   c.l.journal.JournalApplication --> Starting JournalApplication using Java 17.0.12 with PID 12544 (C:\Workspace\code\learning\journal\target\classes started by MADAN MOHAN in C:\Workspace\code\learning\journal) 
-25-01-22 16:17:17 [main] INFO   c.l.journal.JournalApplication --> The following 1 profile is active: "dev" 
-25-01-22 16:17:18 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
-25-01-22 16:17:18 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
-25-01-22 16:17:19 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 277 ms. Found 2 MongoDB repository interfaces. 
-25-01-22 16:17:19 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
-25-01-22 16:17:19 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-25-01-22 16:17:19 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.JournalRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-25-01-22 16:17:19 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-25-01-22 16:17:19 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces. 
-25-01-22 16:17:20 [main] INFO   o.s.b.w.e.tomcat.TomcatWebServer --> Tomcat initialized with port 8080 (http) 
-25-01-22 16:17:20 [main] INFO   o.a.coyote.http11.Http11NioProtocol --> Initializing ProtocolHandler ["http-nio-8080"] 
-25-01-22 16:17:20 [main] INFO   o.a.catalina.core.StandardService --> Starting service [Tomcat] 
-25-01-22 16:17:20 [main] INFO   o.a.catalina.core.StandardEngine --> Starting Servlet engine: [Apache Tomcat/10.1.33] 
-25-01-22 16:17:20 [main] INFO   o.a.c.c.C.[Tomcat].[localhost].[/] --> Initializing Spring embedded WebApplicationContext 
-25-01-22 16:17:20 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext --> Root WebApplicationContext: initialization completed in 2846 ms 
-25-01-22 16:17:21 [main] INFO   org.mongodb.driver.client --> MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.12+8-LTS-286"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='madan', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@28be7fec, com.mongodb.Jep395RecordCodecProvider@26f0141, com.mongodb.KotlinCodecProvider@34136bd1]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.w1nis.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-tp87g7-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null} 
-25-01-22 16:17:22 [main] INFO   org.mongodb.driver.cluster --> Waiting for server to become available for operation with ID 2. Remaining time: 29978 ms. Selector: WritableServerSelector, topology description: {type=UNKNOWN, servers=[]. 
-25-01-22 16:17:22 [cluster-ClusterId{value='6790ccb93a17e35988d6b6f8', description='Cluster0'}-srv-cluster0.w1nis.mongodb.net] INFO   org.mongodb.driver.cluster --> Adding discovered server cluster0-shard-00-00.w1nis.mongodb.net:27017 to client view of cluster 
-25-01-22 16:17:22 [cluster-ClusterId{value='6790ccb93a17e35988d6b6f8', description='Cluster0'}-srv-cluster0.w1nis.mongodb.net] INFO   org.mongodb.driver.cluster --> Adding discovered server cluster0-shard-00-01.w1nis.mongodb.net:27017 to client view of cluster 
-25-01-22 16:17:22 [cluster-ClusterId{value='6790ccb93a17e35988d6b6f8', description='Cluster0'}-srv-cluster0.w1nis.mongodb.net] INFO   org.mongodb.driver.cluster --> Adding discovered server cluster0-shard-00-02.w1nis.mongodb.net:27017 to client view of cluster 
-25-01-22 16:17:23 [cluster-ClusterId{value='6790ccb93a17e35988d6b6f8', description='Cluster0'}-cluster0-shard-00-01.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.w1nis.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=444808200, minRoundTripTimeNanos=0, setName='atlas-tp87g7-shard-0', canonicalAddress=cluster0-shard-00-01.w1nis.mongodb.net:27017, hosts=[cluster0-shard-00-00.w1nis.mongodb.net:27017, cluster0-shard-00-01.w1nis.mongodb.net:27017, cluster0-shard-00-02.w1nis.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.w1nis.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=245, topologyVersion=TopologyVersion{processId=6790aae75ae442b6979ff27b, counter=3}, lastWriteDate=Wed Jan 22 16:17:21 IST 2025, lastUpdateTimeNanos=153894969844100} 
-25-01-22 16:17:23 [cluster-ClusterId{value='6790ccb93a17e35988d6b6f8', description='Cluster0'}-cluster0-shard-00-02.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.w1nis.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=439570000, minRoundTripTimeNanos=0, setName='atlas-tp87g7-shard-0', canonicalAddress=cluster0-shard-00-02.w1nis.mongodb.net:27017, hosts=[cluster0-shard-00-00.w1nis.mongodb.net:27017, cluster0-shard-00-01.w1nis.mongodb.net:27017, cluster0-shard-00-02.w1nis.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.w1nis.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000d5, setVersion=245, topologyVersion=TopologyVersion{processId=6790a8b3e8a416ef5eadcea4, counter=6}, lastWriteDate=Wed Jan 22 16:17:21 IST 2025, lastUpdateTimeNanos=153894969746800} 
-25-01-22 16:17:23 [cluster-ClusterId{value='6790ccb93a17e35988d6b6f8', description='Cluster0'}-cluster0-shard-00-00.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.w1nis.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=450786200, minRoundTripTimeNanos=0, setName='atlas-tp87g7-shard-0', canonicalAddress=cluster0-shard-00-00.w1nis.mongodb.net:27017, hosts=[cluster0-shard-00-00.w1nis.mongodb.net:27017, cluster0-shard-00-01.w1nis.mongodb.net:27017, cluster0-shard-00-02.w1nis.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.w1nis.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=245, topologyVersion=TopologyVersion{processId=6790a99431ba5e88c960e3e0, counter=4}, lastWriteDate=Wed Jan 22 16:17:21 GMT+05:30 2025, lastUpdateTimeNanos=153894969746800} 
-25-01-22 16:17:23 [cluster-ClusterId{value='6790ccb93a17e35988d6b6f8', description='Cluster0'}-cluster0-shard-00-02.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Discovered replica set primary cluster0-shard-00-02.w1nis.mongodb.net:27017 with max election id 7fffffff00000000000000d5 and max set version 245 
-25-01-22 16:17:24 [main] INFO   o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer --> Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider 
-25-01-22 16:17:24 [main] WARN   o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer --> Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR 
-25-01-22 16:17:26 [main] INFO   o.a.coyote.http11.Http11NioProtocol --> Starting ProtocolHandler ["http-nio-8080"] 
-25-01-22 16:17:26 [main] INFO   o.s.b.w.e.tomcat.TomcatWebServer --> Tomcat started on port 8080 (http) with context path '/' 
-25-01-22 16:17:26 [main] INFO   c.l.journal.JournalApplication --> Started JournalApplication in 9.74 seconds (process running for 10.952) 
-25-01-22 16:17:34 [http-nio-8080-exec-1] INFO   o.a.c.c.C.[Tomcat].[localhost].[/] --> Initializing Spring DispatcherServlet 'dispatcherServlet' 
-25-01-22 16:17:34 [http-nio-8080-exec-1] INFO   o.s.web.servlet.DispatcherServlet --> Initializing Servlet 'dispatcherServlet' 
-25-01-22 16:17:34 [http-nio-8080-exec-1] INFO   o.s.web.servlet.DispatcherServlet --> Completed initialization in 2 ms 
-25-01-22 16:23:18 [SpringApplicationShutdownHook] INFO   o.s.b.w.e.tomcat.GracefulShutdown --> Commencing graceful shutdown. Waiting for active requests to complete 
-25-01-22 16:23:18 [tomcat-shutdown] INFO   o.s.b.w.e.tomcat.GracefulShutdown --> Graceful shutdown complete 
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+25-01-22 16:46:56 [main] ERROR  o.s.boot.SpringApplication --> Application run failed 
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.learning.journal.JournalApplication.main(JournalApplication.java:32)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtFilter': Unsatisfied dependency expressed through field 'userDetailsServiceImp': Error creating bean with name 'userDetailsServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4426)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 55 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRepositoryImpl': Unsatisfied dependency expressed through field 'mongoTemplate': Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 68 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 83 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 95 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 109 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception with message: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 123 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'standardMongoSettingsCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration$MongoClientSettingsConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1885)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1659)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1575)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2474)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2468)
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration.mongo(MongoAutoConfiguration.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 126 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.mongo.StandardMongoClientSettingsBuilderCustomizer]: Factory method 'standardMongoSettingsCustomizer' threw exception with message: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 148 common frames omitted
+Caused by: java.lang.IllegalArgumentException: The connection string is invalid. Connection strings must start with either 'mongodb://' or 'mongodb+srv://
+	at com.mongodb.ConnectionString.<init>(ConnectionString.java:362)
+	at com.mongodb.ConnectionString.<init>(ConnectionString.java:343)
+	at org.springframework.boot.autoconfigure.mongo.PropertiesMongoConnectionDetails.getConnectionString(PropertiesMongoConnectionDetails.java:49)
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration$MongoClientSettingsConfiguration.standardMongoSettingsCustomizer(MongoAutoConfiguration.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 151 common frames omitted
+25-01-22 16:47:06 [main] INFO   c.l.journal.JournalApplication --> Starting JournalApplication using Java 17.0.12 with PID 16308 (C:\Workspace\code\learning\journal\target\classes started by MADAN MOHAN in C:\Workspace\code\learning\journal) 
+25-01-22 16:47:06 [main] INFO   c.l.journal.JournalApplication --> The following 1 profile is active: "dev" 
+25-01-22 16:47:08 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
+25-01-22 16:47:08 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
+25-01-22 16:47:08 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 319 ms. Found 2 MongoDB repository interfaces. 
+25-01-22 16:47:08 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Multiple Spring Data modules found, entering strict repository configuration mode 
+25-01-22 16:47:08 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+25-01-22 16:47:08 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.JournalRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+25-01-22 16:47:08 [main] INFO   o.s.d.r.c.RepositoryConfigurationExtensionSupport --> Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.learning.journal.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+25-01-22 16:47:08 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate --> Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces. 
+25-01-22 16:47:09 [main] INFO   o.s.b.w.e.tomcat.TomcatWebServer --> Tomcat initialized with port 8080 (http) 
+25-01-22 16:47:09 [main] INFO   o.a.coyote.http11.Http11NioProtocol --> Initializing ProtocolHandler ["http-nio-8080"] 
+25-01-22 16:47:09 [main] INFO   o.a.catalina.core.StandardService --> Starting service [Tomcat] 
+25-01-22 16:47:09 [main] INFO   o.a.catalina.core.StandardEngine --> Starting Servlet engine: [Apache Tomcat/10.1.33] 
+25-01-22 16:47:09 [main] INFO   o.a.c.c.C.[Tomcat].[localhost].[/] --> Initializing Spring embedded WebApplicationContext 
+25-01-22 16:47:09 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext --> Root WebApplicationContext: initialization completed in 3168 ms 
+25-01-22 16:47:12 [main] INFO   org.mongodb.driver.client --> MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.12+8-LTS-286"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='madan', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@367d34c0, com.mongodb.Jep395RecordCodecProvider@4ce25e47, com.mongodb.KotlinCodecProvider@6380e9e9]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.w1nis.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-tp87g7-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null} 
+25-01-22 16:47:14 [main] INFO   org.mongodb.driver.cluster --> Waiting for server to become available for operation with ID 2. Remaining time: 29979 ms. Selector: WritableServerSelector, topology description: {type=UNKNOWN, servers=[]. 
+25-01-22 16:47:14 [cluster-ClusterId{value='6790d3b8c692c6589cc42082', description='Cluster0'}-srv-cluster0.w1nis.mongodb.net] INFO   org.mongodb.driver.cluster --> Adding discovered server cluster0-shard-00-00.w1nis.mongodb.net:27017 to client view of cluster 
+25-01-22 16:47:14 [cluster-ClusterId{value='6790d3b8c692c6589cc42082', description='Cluster0'}-srv-cluster0.w1nis.mongodb.net] INFO   org.mongodb.driver.cluster --> Adding discovered server cluster0-shard-00-01.w1nis.mongodb.net:27017 to client view of cluster 
+25-01-22 16:47:14 [cluster-ClusterId{value='6790d3b8c692c6589cc42082', description='Cluster0'}-srv-cluster0.w1nis.mongodb.net] INFO   org.mongodb.driver.cluster --> Adding discovered server cluster0-shard-00-02.w1nis.mongodb.net:27017 to client view of cluster 
+25-01-22 16:47:15 [cluster-ClusterId{value='6790d3b8c692c6589cc42082', description='Cluster0'}-cluster0-shard-00-00.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.w1nis.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=463244000, minRoundTripTimeNanos=0, setName='atlas-tp87g7-shard-0', canonicalAddress=cluster0-shard-00-00.w1nis.mongodb.net:27017, hosts=[cluster0-shard-00-00.w1nis.mongodb.net:27017, cluster0-shard-00-01.w1nis.mongodb.net:27017, cluster0-shard-00-02.w1nis.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.w1nis.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=245, topologyVersion=TopologyVersion{processId=6790a99431ba5e88c960e3e0, counter=4}, lastWriteDate=Wed Jan 22 16:47:14 IST 2025, lastUpdateTimeNanos=155687332992900} 
+25-01-22 16:47:15 [cluster-ClusterId{value='6790d3b8c692c6589cc42082', description='Cluster0'}-cluster0-shard-00-02.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.w1nis.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=449129100, minRoundTripTimeNanos=0, setName='atlas-tp87g7-shard-0', canonicalAddress=cluster0-shard-00-02.w1nis.mongodb.net:27017, hosts=[cluster0-shard-00-00.w1nis.mongodb.net:27017, cluster0-shard-00-01.w1nis.mongodb.net:27017, cluster0-shard-00-02.w1nis.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.w1nis.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000d5, setVersion=245, topologyVersion=TopologyVersion{processId=6790a8b3e8a416ef5eadcea4, counter=6}, lastWriteDate=Wed Jan 22 16:47:14 IST 2025, lastUpdateTimeNanos=155687332992800} 
+25-01-22 16:47:15 [cluster-ClusterId{value='6790d3b8c692c6589cc42082', description='Cluster0'}-cluster0-shard-00-02.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Discovered replica set primary cluster0-shard-00-02.w1nis.mongodb.net:27017 with max election id 7fffffff00000000000000d5 and max set version 245 
+25-01-22 16:47:16 [cluster-ClusterId{value='6790d3b8c692c6589cc42082', description='Cluster0'}-cluster0-shard-00-01.w1nis.mongodb.net:27017] INFO   org.mongodb.driver.cluster --> Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.w1nis.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=199997600, minRoundTripTimeNanos=0, setName='atlas-tp87g7-shard-0', canonicalAddress=cluster0-shard-00-01.w1nis.mongodb.net:27017, hosts=[cluster0-shard-00-00.w1nis.mongodb.net:27017, cluster0-shard-00-01.w1nis.mongodb.net:27017, cluster0-shard-00-02.w1nis.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.w1nis.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=245, topologyVersion=TopologyVersion{processId=6790aae75ae442b6979ff27b, counter=3}, lastWriteDate=Wed Jan 22 16:47:15 IST 2025, lastUpdateTimeNanos=155688147606100} 
+25-01-22 16:47:16 [main] INFO   o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer --> Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider 
+25-01-22 16:47:16 [main] WARN   o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer --> Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR 
+25-01-22 16:47:18 [main] INFO   o.a.coyote.http11.Http11NioProtocol --> Starting ProtocolHandler ["http-nio-8080"] 
+25-01-22 16:47:18 [main] INFO   o.s.b.w.e.tomcat.TomcatWebServer --> Tomcat started on port 8080 (http) with context path '/' 
+25-01-22 16:47:18 [main] INFO   c.l.journal.JournalApplication --> Started JournalApplication in 13.061 seconds (process running for 14.501) 
+25-01-22 16:47:33 [http-nio-8080-exec-1] INFO   o.a.c.c.C.[Tomcat].[localhost].[/] --> Initializing Spring DispatcherServlet 'dispatcherServlet' 
+25-01-22 16:47:33 [http-nio-8080-exec-1] INFO   o.s.web.servlet.DispatcherServlet --> Initializing Servlet 'dispatcherServlet' 
+25-01-22 16:47:33 [http-nio-8080-exec-1] INFO   o.s.web.servlet.DispatcherServlet --> Completed initialization in 2 ms 
+25-01-22 16:48:57 [SpringApplicationShutdownHook] INFO   o.s.b.w.e.tomcat.GracefulShutdown --> Commencing graceful shutdown. Waiting for active requests to complete 
+25-01-22 16:48:57 [tomcat-shutdown] INFO   o.s.b.w.e.tomcat.GracefulShutdown --> Graceful shutdown complete 
