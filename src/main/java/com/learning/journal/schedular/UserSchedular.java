@@ -1,7 +1,6 @@
 package com.learning.journal.schedular;
 
 import com.learning.journal.entities.User;
-import com.learning.journal.repositories.UserRepository;
 import com.learning.journal.repositories.UserRepositoryImpl;
 import com.learning.journal.services.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;

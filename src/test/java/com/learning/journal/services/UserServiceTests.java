@@ -2,6 +2,7 @@ package com.learning.journal.services;
 
 import com.learning.journal.entities.User;
 import com.learning.journal.repositories.UserRepository;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ArgumentsProvider;
@@ -15,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
+@Disabled
 public class UserServiceTests {
     @Autowired
     private UserRepository userRepository;

@@ -2,14 +2,21 @@ package com.learning.journal.controllers;
 
 import com.learning.journal.entities.User;
 import com.learning.journal.services.CityService;
+import com.learning.journal.services.UserDetailsServiceImp;
 import com.learning.journal.services.UserService;
 import com.learning.journal.util.CityResponse;
+import com.learning.journal.util.JwtUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+@Slf4j
 @RestController
 @RequestMapping("/public")
 public class publicController {
@@ -19,13 +26,38 @@ public class publicController {
     @Autowired
     private CityService cityService;
 
-    @PostMapping("/user")
-    public ResponseEntity<?> save(@RequestBody User user){
+    @Autowired
+    private  AuthenticationManager authenticationManager;
+
+    @Autowired
+    private UserDetailsServiceImp userDetailsServiceImp;
+
+    @Autowired
+    private JwtUtil jwtUtil;
+
+
+    @PostMapping("/signup")
+    public ResponseEntity<?> signup(@RequestBody User user){
         try{
             User savedUser = userService.save(user);
             return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
         } catch (Exception e) {
-            return new ResponseEntity<>("Something went wrong", HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestBody User user){
+        try{
+            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getUserName(),user.getPassword()));
+
+            UserDetails userDetails = userDetailsServiceImp.loadUserByUsername(user.getUserName());
+            String jwt = jwtUtil.generateToken(userDetails.getUsername());
+
+            return  new ResponseEntity<>(jwt,HttpStatus.OK);
+        } catch (Exception e) {
+            log.error("Exception occurred while authentication",e);
+            return new ResponseEntity<>("Incorrect username and password", HttpStatus.BAD_REQUEST);
         }
     }
 

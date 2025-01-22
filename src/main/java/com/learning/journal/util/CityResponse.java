@@ -1,38 +1,22 @@
 package com.learning.journal.util;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Setter
+@Getter
 public class CityResponse {
     private Data data;
 
-    public Data getData() {
-        return data;
-    }
-
-    public void setData(Data data) {
-        this.data = data;
-    }
-
+    @Setter
+    @Getter
     public static class Data {
         private int count;
         private List<?> rows = new ArrayList<>();
 
-        public int getCount() {
-            return count;
-        }
-
-        public void setCount(int count) {
-            this.count = count;
-        }
-
-        public List<?> getRows() {
-            return rows;
-        }
-
-        public void setRows(List<?> rows) {
-            this.rows = rows;
-        }
     }
 }
 
