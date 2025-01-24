@@ -18,3 +18,11 @@ spring:
           starttls:
             enable: true
             required: true
+  rabbitmq:
+    host: ${RM_HOST}
+    port: 5671
+    username: ${RM_USER}
+    password: ${RM_PASS}
+    virtual-host: ${RM_VIRTUAL_HOST}
+    ssl:
+      enabled: true # CloudAMQP uses TLS/SSL

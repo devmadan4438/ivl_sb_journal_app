@@ -4,7 +4,7 @@ import com.learning.journal.entities.User;
 import com.learning.journal.services.CityService;
 import com.learning.journal.services.UserDetailsServiceImp;
 import com.learning.journal.services.UserService;
-import com.learning.journal.util.CityResponse;
+import com.learning.journal.services.rabbitmq.RabbitProducer;
 import com.learning.journal.util.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,12 +14,11 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 
 @Slf4j
 @RestController
 @RequestMapping("/public")
-public class publicController {
+public class PublicController {
     @Autowired
     private UserService userService;
 
@@ -35,6 +34,8 @@ public class publicController {
     @Autowired
     private JwtUtil jwtUtil;
 
+    @Autowired
+    private RabbitProducer rabbitProducer;
 
     @PostMapping("/signup")
     public ResponseEntity<?> signup(@RequestBody User user){
@@ -64,6 +65,7 @@ public class publicController {
     @GetMapping("/city")
     public ResponseEntity<?> getCity() {
         try {
+            // rabbitProducer.sendEmailToQueue("Test message");
             // Return the CityResponse object
             return ResponseEntity.ok(cityService.getCity());
         } catch (Exception e) {
